@@ -1,0 +1,341 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 19, 2019, 4:06:16 PM
+    Author     : TranTham
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+
+    width:auto;
+    height: 100px;
+    font-family: serif, sans-serif, Arial, Helvetica, sans-serif;
+}
+/*-------------------------------------------------------------------------------------*/
+.wrap{
+    margin-top:3px;
+    width: 100%;
+    height: 620px;  
+ /*   background-image: linear-gradient(to top, whitef 0%, blue 150%);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    background:#ebeded;
+   box-shadow: 2px 2px 4px 1px #00000057;
+} 
+/*-------------------------------------------------------------------------------------------------*/
+/* thanh menu ngang */
+.sidebar {
+     background:#3e4af7;  
+    height: 50px;
+    border-radius: 4px;
+    line-height: 50px;
+    font-family: sans-serif;
+    color: white;
+}
+
+ul {
+    
+    float: right;
+}
+li {
+    display: inline;
+    transition: 0.3s;
+    padding: 12px 30px;
+}
+ 
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+ .logo{ 
+     float: left;
+    cursor: pointer;}
+.icon {
+    float: right;
+    display: none;
+}
+ul li:hover{
+    background-color:#406a94;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+ul.cap_2 {
+    width: 200px;
+    height: auto;
+    border: 1px solid #9fa0a1;
+    background-color: #9fa0a1;
+    position: absolute;
+    top: 39px;
+    left: -13px;
+    box-shadow: 2px 2px 4px 1px #00000057;
+    display: none;
+}
+ 
+ul.cap_2 li {    
+    display: block;
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+ 
+ul.cap_2 li:last-child {
+    border: none;
+}
+ 
+li{
+    position: relative;
+}
+li:hover ul.cap_2 {
+    display: block;
+}
+@media(max-width:1000px){
+    ul{
+        display: none;
+    }
+    ul.active {
+        margin: 0;
+        background-color:black;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top:50px;
+        left: 0px;
+        display: block;
+    }
+    ul li{
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid white
+    }
+    .icon{
+        display: block;
+    }
+    ul.cap_2{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 9999;
+        left: 0px;
+    }
+}
+/*-----------------------------------------------------------------------------------*/
+/*phan than html*/
+.content{    
+    width: 100%px;
+    height: 300px;}
+
+#tren{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:auto;
+    width: 100%;
+    height: 170px;
+}
+
+/*form so tiep nhận & nha cung cap*/
+#form-kholuutrumau{
+    color: black;
+    width: 700px;
+    font-weight: bold;
+    height: 160px;
+    float: left;
+    margin-left: 60px;}
+.form-table2{ 
+      width: 650px; 
+    height: 50px;     
+    }    
+.form-table2 td{
+    height: 30px;
+    text-align: left;    
+       }     
+#inputstn input[type=text]{
+    width: 200px;
+    height: 26px;
+ border-radius: 5px;
+     box-shadow: 2px 2px 4px 1px #00000057;
+}
+.stn{
+    width: 200px;
+}
+#inputstn input[type=date]{
+    height: 26px;
+    width: 140px;
+ border-radius: 5px;
+     box-shadow: 2px 2px 4px 1px #00000057;
+}
+.m1 select{
+     box-shadow: 2px 2px 4px 1px #00000057;
+border-bottom-color: rgb(238, 238, 238);
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+border-bottom-style: inset;
+border-bottom-width: 2px;
+border-left-color: rgb(238, 238, 238);
+border-left-style: inset;
+border-left-width: 2px;
+border-right-color: rgb(238, 238, 238);
+border-right-style: inset;
+border-right-width: 2px;
+border-top-color: rgb(238, 238, 238);
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+border-top-style: inset;
+border-top-width: 2px;
+color: rgb(0, 0, 0);
+display: block;
+    font-size: 13px;
+    height: 32px;  
+    padding-right: 10px; /* If you add too much padding here, the options won't show in IE */
+    width:488px; }
+/*----------------------------------------------------------------------------------------*/
+.table-tuimau{
+    float: left;
+    height: 170px;
+    width: 700px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.table-tuimau td{
+    text-align: left;
+    height: 50px;
+    }
+#ban-tuimau{
+    width: 700px; 
+}
+.banmm input[type=text] {
+    height: 28px; width: 99%;
+ border-radius: 5px;
+     box-shadow: 2px 2px 4px 1px #00000057;
+}
+.banmm1{
+    width:100px; 
+}
+
+/*---------------------------------------------------------------------------------------------*//*nut xem*/
+.nut{  
+    margin-top: px;
+    margin-bottom: 10px;      
+    width: 15%;
+    float: left;
+    cursor: pointer;
+    
+}
+#nutxem{
+    cursor: pointer;
+    	-moz-box-shadow:inset 13px 9px 13px -7px #bcf7f7;
+	-webkit-box-shadow:inset 13px 9px 13px -7px #bcf7f7;
+	box-shadow:inset 13px 9px 13px -7px #bcf7f7;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #74e6fc), color-stop(1, #3e4af7) );
+	background:-moz-linear-gradient( center top, #74e6fc 5%, #3e4af7 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#74e6fc', endColorstr='#3e4af7');
+	background-color:#74e6fc;
+	-webkit-border-top-left-radius:10px;
+	-moz-border-radius-topleft:10px;
+	border-top-left-radius:10px;
+	-webkit-border-top-right-radius:10px;
+	-moz-border-radius-topright:10px;
+	border-top-right-radius:10px;
+	-webkit-border-bottom-right-radius:10px;
+	-moz-border-radius-bottomright:10px;
+	border-bottom-right-radius:10px;
+	-webkit-border-bottom-left-radius:10px;
+	-moz-border-radius-bottomleft:10px;
+	border-bottom-left-radius:10px;
+	text-indent:-2px;
+	border:1px solid #2493bf;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Comic Sans MS;
+	
+	font-weight:bold;
+	font-style:normal;
+	height:40px;
+	
+
+	text-decoration:none;
+	text-align:center;
+	text-shadow:0px 3px 0px #5295cc;
+   width: 130px;
+   margin-left: 30px;
+   font-size:15px;
+    float: left;
+  
+  outline: none;
+ 
+ 
+}
+#nutxem:hover{  
+         background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3e4af7), color-stop(1,#74e6fc) );
+	background:-moz-linear-gradient( center top,#3e4af7 5%,#74e6fc 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3e4af7', endColorstr='#74e6fc');
+	background-color:#3e4af7;
+}
+#nutxem:active {
+	position:relative;
+	top:1px;
+}
+/**************************************************************************************************/
+ /*bản hien thi cuoi*/
+.panel-body2{
+    float: left;
+    width:1625px;
+    border:1px solid black;       
+} 
+.panel-body{
+    overflow:auto;
+    float: left;
+    width: 99.7%;
+    border:2px solid black;  
+} 
+.bangthong-tin{
+  
+    width:1600px;
+    font-size: 14px;
+    border:  1px solid ;
+    text-align: center;
+}
+.bangthong-tin th {
+    color: white;
+    background: #3e4af7;
+    white-space: nowrap;
+    text-align: center;width: 100px;border: solid 1px;
+    z-index: 100000; /*Hiển thị lớp trên cùng*/
+}
+.bangthong-tin td{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+p{
+    width: 100px; 
+    padding: 2px 5px; 
+    white-space: nowrap;
+    overflow: hidden;
+}
+.overflow-ellipsis {
+    text-overflow: ellipsis;
+  }
+/***********************************************************************************************/
+.footer {
+    width: 100%;
+    height: 30px;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: brown;
+    
+  
+  
+}
